@@ -1,0 +1,220 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5EFE7;
+    /* bg-light-primary */
+    color: #2B2B2B;
+    /* text-on-light */
+}
+
+.admin-header {
+    background: linear-gradient(135deg, #4A3226 0%, #5C3B2E 100%);
+    /* bg-dark-gradient */
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+.admin-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.admin-nav a:hover {
+    color: #C9A227;
+    /* accent-gold */
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.dashboard-stats {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.stat-box {
+    background: #ffff;
+    padding: 30px;
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 1px solid rgba(122, 84, 64, 0.05);
+}
+
+.stat-box h3 {
+    margin: 0 0 15px;
+    color: #7A5440;
+    /* bg-warm-primary */
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-box p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #4A3226;
+    /* bg-dark-primary */
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #EDE3D6;
+}
+
+th {
+    background-color: #F5EFE7;
+    font-weight: 700;
+    color: #4A3226;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+tr:hover {
+    background-color: #FDFBF9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #C9A227;
+    /* accent-gold */
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #A6861F;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(201, 162, 39, 0.2);
+}
+
+.btn-danger {
+    background-color: #8B5E3C;
+    /* Using warm brown for neutral but distinct action */
+}
+
+.btn-danger:hover {
+    background-color: #4A3226;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #4A3226;
+}
+
+.btn-success:hover {
+    background-color: #2D201A;
+    color: #fff;
+}
+
+.action-btn {
+    margin-right: 5px;
+}
+
+/* Forms */
+.form-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid rgba(122, 84, 64, 0.05);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #4A3226;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #EDE3D6;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #C9A227;
+    box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.1);
+}
+
+.alert {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.success-msg {
+    color: #4A3226;
+    background-color: #EDE3D6;
+    border: 1px solid #C9A227;
+}
+
+.error-msg {
+    color: #fff;
+    background-color: #8B5E3C;
+}
+
+.pagination {
+    margin-top: 40px;
+    text-align: center;
+}
